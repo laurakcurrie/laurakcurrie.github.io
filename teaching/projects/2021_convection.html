@@ -6,15 +6,16 @@
   body { margin-left: 5%;
     margin-right: 5%; margin-top: 5%;
     font-family: sans-serif }
-img {
+figure {
   float: left;
+  width: 38%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  margin-top: -0.4cm
 }
 </style>
-
-<!-- <link rel="stylesheet" type="text/css" href="../style/style.css" /> -->
-
-
-
 </head>
 
 <body bgcolor="#EEE"; font: normal .80em 'trebuchet ms', arial, sans-serif>
@@ -32,34 +33,39 @@ img {
 <h3>Description</h3>
 
 <p>
-Convection is present in every star, and in many planets as well. It transports heat, mixes material, and in most cases is responsible for building the magnetic fields we observe at the surfaces of these objects. 
+Convection is an important process in every star, as well as in many planets. It transports heat, mixes material, and often plays a role in the generation of the magnetic fields we observe at the surfaces of these objects. 
 
 In this project we will explore the equations describing convection in an idealised context.
 </p>
 
-<img src="../images/gr_np_0_Ta_0.png" alt="" style="width:38%">
+<figure>
+  <p><img src="../images/gr_np_0_Ta_0.png"
+    width="100%"
+    alt="">
+  <figcaption>FIG CAPTION</figcaption>
+</figure>
 
-<br>
 
 <p>
-Description of figure -- might want to add a link
+How vigorous the convection is often characterised by a dimensionless number, Ra, which gives a measure of the strength of buoyancy forces relative to viscous forces. In particular, convection only onsets above a critical value, Ra<sub>crit</sub>. The project will begin by looking at the underlying equations that govern convection in a fluid and by calculating Ra<sub>crit</sub> for simple fluid systems.
 </p>
 
 <p>
-We will begin by considering the linearised equations and study when convection onsets in a fluid. This involves studying an eigenvalue problem, the simplest of which can be solved analytically. For more complex cases, involving more realistic physical effects, students would be encouraged to write a numerical code to examine these cases. 
+Mathematically, this involves setting up and solving a linear eigenvalue problem, the simplest of which can be solved analytically. For more complex cases (involving more realistic physical effects) students would be encouraged to write a short numerical code to examine these cases. 
 </p>
 
-<p style="margin-bottom:1.2cm;">
-</p>
+
 
 <p>
-Depending on particular interests, there is scope for this project to consider different physical effects on the convection, e.g., rotation, magnetic field or different geometries. Alternatively, it is possible to extend the problem into the nonlinear regime and to study aspects of the convection in the nonlinear regime. This would involve solving a set of PDEs numerically.
+Depending on particular interests, there is scope for this project to then head in different directions. For example, the addition of different physical effects (e.g., rotation or magnetism) on the convection could be considered; or different geometries. Alternatively, for those particularly interested in numerical modelling, it is possible to extend the problem into the nonlinear regime and to study aspects of the convection there. 
 </p>
 
-<h3>Prerequisites</h3>
+<h3>Prerequisites/Corequisites</h3>
 
 <p>
-Ideal prerequisites/corequisites
+Analysis In Many Variables II is required. Some basic knowledge of numerical computations in python (or similar) would be useful, but not essential.
+
+It is recommended that Fluid Mechanics III is taken alongside doing this project.
 </p>
 
 <h3>Resources</h3>
