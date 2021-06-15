@@ -9,11 +9,14 @@
 figure {
   float: left;
   width: 38%;
-  text-align: center;
+  text-align: left;
   font-style: italic;
-  font-size: smaller;
+  font-size: 10px;
   text-indent: 0;
   margin-top: -0.4cm
+}
+li{
+  margin: 10px 0;
 }
 </style>
 </head>
@@ -42,7 +45,7 @@ In this project we will explore the equations describing convection in an ideali
   <p><img src="../images/gr_np_0_Ta_0.png"
     width="100%"
     alt="">
-  <figcaption>FIG CAPTION</figcaption>
+  <figcaption>Contours of the growth rate of the linear convective modes as a function of Ra and wavenumber. Ra<sub>crit</sub> is given by the minimum of the dotted curve. This figure was made with the help of <a href="https://github.com/DedalusProject/eigentools">Eigentools</a>.</figcaption>
 </figure>
 
 
@@ -57,13 +60,13 @@ Mathematically, this involves setting up and solving a linear eigenvalue problem
 
 
 <p>
-Depending on particular interests, there is scope for this project to then head in different directions. For example, the addition of different physical effects (e.g., rotation or magnetism) on the convection could be considered; or different geometries. Alternatively, for those particularly interested in numerical modelling, it is possible to extend the problem into the nonlinear regime and to study aspects of the convection there. 
+Depending on particular interests, there is scope for this project to head in a number of directions. For example, the addition of different physical effects (e.g., rotation or magnetism) on the convection could be considered; or different geometries. Alternatively, for those particularly interested in numerical modelling, it is possible to extend the problem into the nonlinear regime and to study aspects of the convection there. 
 </p>
 
 <h3>Prerequisites/Corequisites</h3>
 
 <p>
-Analysis In Many Variables II is required. Some basic knowledge of numerical computations in python (or similar) would be useful, but not essential.
+Analysis In Many Variables II is required. Some basic knowledge of numerical computations in Python (or similar) would be useful, but not essential.
 
 It is recommended that Fluid Mechanics III is taken alongside doing this project.
 </p>
@@ -71,7 +74,14 @@ It is recommended that Fluid Mechanics III is taken alongside doing this project
 <h3>Resources</h3>
 
 <p>
- Background reading and links to resources.
+
+<ul>
+  <li><a href="https://arxiv.org/abs/1506.01656">Review paper by Goluskin</a> (for background material on convection)</li>
+  <li><a href="https://library.dur.ac.uk/record=b1046620~S1">Textbook by Chandrasekhar</a> (classic textbook for linear stability problems)</li>
+  <li>Paper by <a href="https://ui.adsabs.harvard.edu/abs/1980GApFD..15....7H/abstract">Hathaway et al. (1980)</a> (research article looking at Ra<sub>crit</sub> in an interesting geometry)
+ </li>
+</ul> 
+
 </p>
 
 
