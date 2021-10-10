@@ -60,7 +60,7 @@ a:hover
   margin-left: 10px;}
 
 .center
-{ display: block;
+{ display: inline-block;
   text-align: center;
   margin: 20px auto;}
 
@@ -138,7 +138,7 @@ ul#menu li
 ul#menu li a
 { letter-spacing: 0.1em;
   font: normal 100% arial, sans-serif;
-  display: block; 
+  display: inline-block;
   float: left; 
   height: 37px;
   padding: 29px 26px 6px 26px;
@@ -175,7 +175,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 
 .sidebar li a, .sidebar li a:hover
 { padding: 0 0 0 40px;
-  display: block;
+  display: inline-block;
   background: transparent url(link.png) no-repeat left center;} 
 
 .sidebar li a.selected
