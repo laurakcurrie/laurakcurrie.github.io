@@ -7,18 +7,25 @@
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="style/style.css" />
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
 </head>
 
 <body>
   <div id="main">
+    
     <div id="header">
+      
       <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
           <h1><a href="index.html">Dr Laura Currie</a></h1>
-          <h2>Assistant Professor, Durham University</h2>
+            <h2>Department of Mathematical Sciences, Durham University</h2>
         </div>
       </div>
+      
       <div id="menubar">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
@@ -29,10 +36,12 @@
           <li><a href="teaching.html">Teaching</a></li>
         </ul>
       </div>
+    
     </div>
 
     <div id="content_header"></div>
     <div id="site_content">
+      
       <div id="sidebar_container">
         <div class="sidebar">
           <div class="sidebar_item">
@@ -40,21 +49,81 @@
           </div>
         </div>
       </div>
-      <div id="content">
-
-
+      
+         
+      <div id="content_nosidebar">
         <!-- insert the page content here -->
-        <h1>Research</h1>
-        <h2> Page currently undergoing update </h2>
-  
-      </div>
+
+        <h2>Convection influenced by rotation: simulations and theory</h2>
+
+            <figure class="right">
+                <img src="research/images/Currie_etal_2020_fig2.png" width="362px" height="404px"/>
+                <figcaption>Example snapshot of temperature and vertical flows from a rotating 3D simulation at a latitude of 45°.  The convective plumes tend to align with the rotation axis. <a href="https://doi.org/10.1093/mnras/staa372">[Currie et al. 2020]</a>.</figcaption>
+            </figure>
+ 
+
+            <p> All stars, and many planets, carry energy by convection in some parts of their interiors. The heat transport associated with this convection, which must be calculated in order to construct a consistent stellar or planetary structure model, is influenced by rotation or magnetism.  But a quantitative understanding of the effects these have on the convection, and so ultimately on stellar/planetary evolution, is still lacking.  A central problem is that the convective dynamics occur on timescales that are much shorter than the evolutionary ones.  Hence, numerical simulations that can adequately resolve the convective flows cannot be evolved over evolutionary timescales in order to investigate long-term effects on stellar structure.
+                
+                In <a href="https://doi.org/10.1093/mnras/staa372">this work</a> we conducted a large survey of 3D simulations in localised, Cartesian domains tilted at some angle with respect to the rotation vector. These box simulations served as idealised representations of a small part of a rotating star or planet, situated at various latitudes. We used these to analyse the rich variety of phenomena that occur as the rotation rate and latitude are changed, and to compute how the temperature gradient established by the convection varies with these parameters. Broadly, rotation makes the heat transport less efficient, leading to steeper temperature gradients. We compared the results of these calculations to expectations from semi-analytical theory: in particular, we showed that a new multi-mode “rotating mixing length” theory (based on earlier work by Stevenson 1979) provides a reasonably good description of the dynamics at most latitudes and rotation rates. This semi-analytical model could be incorporated into 1D stellar evolution codes.   </p>
+             
+        <h2>Viscous dissipation in stratified convection</h2>
+             
+            <figure class="left">
+                <img src="research/images/Currie_Browning_2017_fig1.png" width="361px" height="286px"/>
+                <figcaption>Global dissipative heating rate normalized by the luminosity, \(E\), against \(N_\rho\) for \(Pr=1\) (red squares) and \(Pr=10\) (orange triangles). Cases in which the dissipative heating terms were not included in the energy equation are denoted by black circles. See <a href="https://doi.org/10.3847/2041-8213/aa8301">Currie & Browning (2017)</a> for more details.</figcaption>
+            </figure>
+ 
+
+ <p> Convection in astrophysical systems must be maintained against dissipation. Although the effects of dissipation are often assumed to be negligible, theory suggests that in strongly stratified convecting fluids, the dissipative heating rate can exceed the luminosity carried by convection. In <a href="https://doi.org/10.3847/2041-8213/aa8301"> this work</a> we explored this possibility using a series of numerical simulations. We considered two-dimensional numerical models of hydrodynamic convection in a Cartesian layer under the anelastic approximation and demonstrate that the dissipative heating rate can indeed exceed the imposed luminosity. We established a theoretical expression for the ratio of the dissipative heating rate to the luminosity emerging at the upper boundary, in terms only of the depth of the layer and the thermal scale height. In particular, we showed that this ratio is independent of the diffusivities and confirm this with a series of numerical simulations. Our results suggest that dissipative heating may significantly alter the internal dynamics of stars and planets. Work is ongoing to investigate if the results explored here also apply to the full 3D problem with rotation and magnetism. If this turns out to be the case then the total dissipative heating is determined non-locally, dependent as it is on the total layer depth. Simple modifications to the mixing-length theory (which is determined locally) may not then suffice to capture it.
+           </p>
+
+
+        
+     
+        <h2>Mean flows and vortices in anelastic convection</h2>
+        
+        <p> From the jets and vortices on Jupiter to the winds in stars, systematic astrophysical flows can be generated by the interaction of convection with rotation and stratification. <a href="https://doi.org/10.1103/PhysRevFluids.5.073501"> Here</a>, we investigated this complicated interplay in detail. In particular, we considered the effect of stratification on systematic large-scale flows generated in anelastic convection. We presented results from three-dimensional numerical simulations of convection in a rotating plane layer in which the angle between the axis of rotation and gravity was allowed to vary. We considered two distinct parameter regimes: (i) weakly rotating and (ii) rapidly rotating. In each case, we examined the effect of stratification on the flow structure and heat transport properties focusing on the difference between Boussinesq and anelastic convection. Furthermore, we showed that regimes (i) and (ii) generate very different large-scale flows and investigated the role stratification has in modifying these flows. The stratified flows possess a net helicity not present in the Boussinesq cases which we suggest, when combined with the self-generated shear flows, could be important for dynamo action.</p>
+         
+
+
+             <div class="row">
+               <div class="column">
+                    <img src="research/videos/meanflow_Nrho5_B5.gif" alt="" style="width:100%" />
+               </div>
+                 <div class="column">
+                      <img src="research/videos/meanflow_Nrho5_B5star.gif" alt="" style="width:100%" />
+                 </div>
+                 <div class="column">
+                      <img src="research/videos/meanflow_Nrho0_B0.gif" alt="" style="width:100%"/>
+                 </div>
+             </div>
+
+          <figcaption>Animations of the mean flow depicted by vectors in a number of horizontal planes across the layer depth. Simulations B5 and B5* have \(N_{\rho}=5\), and the only difference between them is the initial state from which the simulations were initialised. The initial state for B5 had a non-zero vertically integrated horizontal momentum whereas B5* did not; in this case, B5 exhibits spiralling, but B5* does not. B0 is a Boussinesq simulation initialised from a state with no vertically integrated horizontal momentum. In contrast to the Nrho=5 simulations, no sprialling of the flow is observed even when the initial state had a non zero vertically integrated horizontal momentum (not shown). <a href="https://doi.org/10.1103/PhysRevFluids.5.073501">[Currie & Tobias, 2020]</a> </figcaption>
+             
+             
+             <!-- <div id="content_nosidebar">
+               <date><script language="Javascript" >
+                   da = new Date(document.lastModified)
+               da1 = ("0" + da.getDate()).slice(-2)
+                   da2 = ("0" + (da.getMonth() + 1)).slice(-2)
+               da3 = da.getFullYear()
+               str = "Page last updated: " + da1 +"/" + da2 +"/" + da3
+               document.write(str)
+                   </script></date>
+               </div> -->
+
+             
+     </div>
+      
     </div>
-    <div id="content_footer"></div>
+
+    <div id="content_footer">
     <div id="footer">
       <p><a href="index.html">Home</a> | <a href="research.html">Research</a> | <a href="publications.html">Pubications</a> | <a href="talks.html">Talks</a> | <a href="teaching.html">Teaching</a></p>
-      <p>Copyright &copy; simplestyle_6 | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">Free CSS Templates</a></p>
+      <p><diff>Copyright &copy; simplestyle_6 | </diff><a href="http://validator.w3.org/check?uri=referer"><diff>HTML5</a> <diff>|</diff> <a href="http://jigsaw.w3.org/css-validator/check/referer"><diff>CSS</a> <diff>|</diff> <a href="http://www.html5webtemplates.co.uk"><diff>Free CSS Templates</a></diff></p>
     </div>
     <p>&nbsp;</p>
   </div>
+    
 </body>
 </html>
